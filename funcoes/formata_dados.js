@@ -1,5 +1,11 @@
 import { multiplicar } from "./calculo.js";
 
+
+const infoMsg = {
+    valor: 'Valor deve ser maior que zero',
+    dia: 'Você esta em dia'
+}
+
 const formataTaxaJuros = (taxa) => `${multiplicar(taxa, 100)}%`;
 
 function formatarDados(valorOriginal, valorComJuros, dias, taxaDeJuros) {
@@ -14,4 +20,4 @@ function formatarDados(valorOriginal, valorComJuros, dias, taxaDeJuros) {
 }
 
 
-export default formatarDados;
+export { infoMsg, formatarDados };
